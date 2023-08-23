@@ -11,8 +11,7 @@ export const Logo = styled(Link)<{ size?: string }>`
 	font-weight: var(--fw-b);
 	user-select: none;
 
-	& svg {
+	& img {
 		height: ${({ size }) => size || '30px'};
-		tooltip: none;
 	}
 `

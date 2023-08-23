@@ -1,6 +1,6 @@
 import axios from 'axios'
 import { AuthResponse } from 'app/types'
-export const API_URL = 'http://localhost:5000/api'
+export const API_URL = import.meta.env.VITE_REACT_API_URL + 'api'
 
 const http = axios.create({
 	baseURL: API_URL
