@@ -22,7 +22,7 @@ import { DeliveryModule } from './delivery/delivery.module';
       envFilePath: `.${process.env.NODE_ENV}.env`,
     }),
     ServeStaticModule.forRoot({
-      rootPath: path.resolve(__dirname, 'public'),
+      rootPath: path.resolve(__dirname, '..', 'dist/public'),
     }),
     MongooseModule.forRoot(process.env.MONGO_URI),
     ProductModule,

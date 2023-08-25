@@ -1,34 +1,3 @@
-# FROM node:18 as client
-
-# WORKDIR /app/client
-
-# COPY client/package.json /app/client
-
-# RUN npm install
-
-# COPY client /app/client/
-
-# RUN npm run build
-
-# FROM node:18
-
-# WORKDIR /app/server
-
-# COPY server/package*.json /app/server
-
-# RUN npm install
-
-# COPY server /app/server
-
-# COPY --from=client /app/client/dist /app/server/public
-
-# RUN npm run build
-
-# EXPOSE 8080
-
-# CMD [ "node", "dist/main.js"]
-
-
 FROM node:alpine
 
 WORKDIR /app
